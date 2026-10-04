@@ -1,0 +1,446 @@
+{
+ "tags": [
+  {
+   "id": "asset-01",
+   "title": "H01 protection relay",
+   "registered": true,
+   "panel": "H01",
+   "panel_function": "PT1",
+   "cabinet": "ABB medium-voltage switchgear",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-12",
+    "next_inspection": "2027-05-12",
+    "note": "DEMO DATA: secondary injection test passed; settings file archived."
+   },
+   "position_xyz": [
+    -5.708,
+    -5.856,
+    1.846
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.0,
+    0.008
+   ],
+   "detection": {
+    "sightings": 9,
+    "scan_positions": 8,
+    "mean_confidence": 0.889,
+    "best_photo": "sweep10_face1.jpg"
+   },
+   "crop": "crops/asset-01.jpg"
+  },
+  {
+   "id": "asset-02",
+   "title": "H02 protection relay",
+   "registered": true,
+   "panel": "H02",
+   "panel_function": "Station transformer",
+   "cabinet": "ABB medium-voltage switchgear",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-12",
+    "next_inspection": "2027-05-12",
+    "note": "DEMO DATA: firmware update pending; check binary input wiring at next outage."
+   },
+   "position_xyz": [
+    -5.715,
+    -4.787,
+    1.844
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.012,
+    0.008
+   ],
+   "detection": {
+    "sightings": 13,
+    "scan_positions": 11,
+    "mean_confidence": 0.857,
+    "best_photo": "sweep11_face1.jpg"
+   },
+   "crop": "crops/asset-02.jpg"
+  },
+  {
+   "id": "asset-03",
+   "title": "H03 protection relay",
+   "registered": true,
+   "panel": "H03",
+   "panel_function": "Metering",
+   "cabinet": "ABB medium-voltage switchgear",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-13",
+    "next_inspection": "2027-05-13",
+    "note": "DEMO DATA: no findings; measurement accuracy verified."
+   },
+   "position_xyz": [
+    -5.715,
+    -3.785,
+    1.838
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.013,
+    0.004
+   ],
+   "detection": {
+    "sightings": 14,
+    "scan_positions": 13,
+    "mean_confidence": 0.88,
+    "best_photo": "sweep12_face1.jpg"
+   },
+   "crop": "crops/asset-03.jpg"
+  },
+  {
+   "id": "asset-04",
+   "title": "H04 protection relay",
+   "registered": true,
+   "panel": "H04",
+   "panel_function": "Solar 1",
+   "cabinet": "ABB medium-voltage switchgear",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-13",
+    "next_inspection": "2027-05-13",
+    "note": "DEMO DATA: trip circuit supervision alarm cleared; monitor."
+   },
+   "position_xyz": [
+    -5.716,
+    -2.794,
+    1.84
+   ],
+   "normal_xyz": [
+    1.0,
+    0.014,
+    0.002
+   ],
+   "detection": {
+    "sightings": 13,
+    "scan_positions": 11,
+    "mean_confidence": 0.907,
+    "best_photo": "sweep13_face1.jpg"
+   },
+   "crop": "crops/asset-04.jpg"
+  },
+  {
+   "id": "asset-05",
+   "title": "H05 protection relay",
+   "registered": true,
+   "panel": "H05",
+   "panel_function": "Solar 2",
+   "cabinet": "ABB medium-voltage switchgear",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-13",
+    "next_inspection": "2027-05-13",
+    "note": "DEMO DATA: no findings."
+   },
+   "position_xyz": [
+    -5.721,
+    -1.804,
+    1.837
+   ],
+   "normal_xyz": [
+    1.0,
+    0.007,
+    0.016
+   ],
+   "detection": {
+    "sightings": 11,
+    "scan_positions": 10,
+    "mean_confidence": 0.92,
+    "best_photo": "sweep14_face1.jpg"
+   },
+   "crop": "crops/asset-05.jpg"
+  },
+  {
+   "id": "asset-06",
+   "title": "OT1 relay (lower)",
+   "registered": true,
+   "panel": "OT1",
+   "panel_function": "Not labelled on site",
+   "cabinet": "VEO control cabinet",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-14",
+    "next_inspection": "2027-05-14",
+    "note": "DEMO DATA: compact front panel variant; commissioning test scheduled."
+   },
+   "position_xyz": [
+    -2.76,
+    -5.909,
+    1.424
+   ],
+   "normal_xyz": [
+    -0.998,
+    0.001,
+    0.06
+   ],
+   "detection": {
+    "sightings": 9,
+    "scan_positions": 7,
+    "mean_confidence": 0.833,
+    "best_photo": "sweep07_face1.jpg"
+   },
+   "crop": "crops/asset-06.jpg"
+  },
+  {
+   "id": "asset-07",
+   "title": "OT1 relay (upper)",
+   "registered": true,
+   "panel": "OT1",
+   "panel_function": "Not labelled on site",
+   "cabinet": "VEO control cabinet",
+   "product": "ABB Relion 615 protection relay",
+   "manufacturer": "ABB",
+   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+   "documents": [
+    {
+     "title": "615 series Operation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756708",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+     "title": "615 series Technical Manual",
+     "type": "manual",
+     "doc_id": "1MRS756887",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+     "title": "615 series Installation Manual",
+     "type": "manual",
+     "doc_id": "1MRS756375",
+     "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+     "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+     "title": "615 series brochure",
+     "type": "brochure",
+     "doc_id": "1MRS759077",
+     "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+     "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+   ],
+   "maintenance": {
+    "last_inspection": "2026-05-14",
+    "next_inspection": "2027-05-14",
+    "note": "DEMO DATA: commissioning test scheduled."
+   },
+   "position_xyz": [
+    -2.763,
+    -5.919,
+    1.724
+   ],
+   "normal_xyz": [
+    -0.998,
+    -0.002,
+    0.064
+   ],
+   "detection": {
+    "sightings": 11,
+    "scan_positions": 9,
+    "mean_confidence": 0.846,
+    "best_photo": "sweep07_face1.jpg"
+   },
+   "crop": "crops/asset-07.jpg"
+  }
+ ],
+ "register_entries_not_found": []
+}

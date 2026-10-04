@@ -1,0 +1,48 @@
+{
+  "name": "ABB Relion 615 protection relay",
+  "manufacturer": "ABB",
+  "series": "Relion 615",
+  "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
+  "ocr_keywords": [
+    "615",
+    "ABB"
+  ],
+  "screen_hsv": {
+    "h": [
+      100,
+      125
+    ],
+    "s_min": 40,
+    "v_min": 150
+  },
+  "documents": [
+    {
+      "title": "615 series Operation Manual",
+      "type": "manual",
+      "doc_id": "1MRS756708",
+      "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756708&LanguageCode=en&DocumentPartId=&Action=Launch",
+      "embed_url": "https://library.e.abb.com/public/6e8b7ab0f6e947f197c15adc06e141d6/RE_615_oper_756708_ENn.pdf"
+    },
+    {
+      "title": "615 series Technical Manual",
+      "type": "manual",
+      "doc_id": "1MRS756887",
+      "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756887&LanguageCode=en&DocumentPartId=&Action=Launch",
+      "embed_url": "https://library.e.abb.com/public/9fe29ac281a0451d9bbacac7a6747e29/615_series_tech_756887_ENq.pdf"
+    },
+    {
+      "title": "615 series Installation Manual",
+      "type": "manual",
+      "doc_id": "1MRS756375",
+      "url": "https://search.abb.com/library/Download.aspx?DocumentID=1MRS756375&LanguageCode=en&DocumentPartId=&Action=Launch",
+      "embed_url": "https://library.e.abb.com/public/247cc2cc7a3c4924b25e3a87950725cc/RE_615_inst_756375_ENt.pdf"
+    },
+    {
+      "title": "615 series brochure",
+      "type": "brochure",
+      "doc_id": "1MRS759077",
+      "url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf",
+      "embed_url": "https://library.e.abb.com/public/5e9705bf66c8485c968f2873ab6e7045/615_series_brochure_759077_LRENa.pdf"
+    }
+  ]
+}

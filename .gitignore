@@ -1,0 +1,40 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Organiser-provided material: too large for GitHub or not ours to publish
+cloud_0.e57
+organiser_material/
+
+# Large generated data. Each folder is rebuilt by the script named above it.
+# extract_e57.py
+scan_images/
+# scan3d.py (created on demand)
+scan_points/
+# make_synthetic.py
+dataset/
+# download_backgrounds.py (sources.csv is kept)
+backgrounds/*.jpg
+# build_ground_truth.py
+ground_truth/preview/
+# evaluate_scan.py
+eval/preview/
+
+# Copies of the manufacturer's manuals: never publish
+documents_cache/
+
+# Training output: keep only the final model and its training log
+runs/detector/*
+!runs/detector/results.csv
+!runs/detector/weights/
+runs/detector/weights/*
+!runs/detector/weights/best.pt
+# Model files downloaded automatically by the training library
+/*.pt
+/weights/
+
+# Photos from the web, for local testing only: not ours to publish
+test_photos/
+# make_photo_dataset.py (contains the web photos)
+dataset_photos/

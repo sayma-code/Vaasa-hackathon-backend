@@ -1,0 +1,22 @@
+Confidence sweep (appearances found / false alarms):
+  conf>=0.25: all 82/110  clear 54/55  false alarms 80
+  conf>=0.40: all 79/110  clear 53/55  false alarms 52
+  conf>=0.50: all 77/110  clear 52/55  false alarms 38
+  conf>=0.60: all 75/110  clear 51/55  false alarms 23
+  conf>=0.70: all 73/110  clear 50/55  false alarms 16
+  conf>=0.80: all 70/110  clear 50/55  false alarms 4
+
+At conf>=0.8:
+  H01        ABB Relion 615, wide HMI (F1-F16)      found in  8/16 photos (clear 6/8)
+  H02        ABB Relion 615, wide HMI (F1-F16)      found in 10/16 photos (clear 7/8)
+  H03        ABB Relion 615, wide HMI (F1-F16)      found in 11/16 photos (clear 10/10)
+  H04        ABB Relion 615, wide HMI (F1-F16)      found in 13/17 photos (clear 8/9)
+  H05        ABB Relion 615, wide HMI (F1-F16)      found in 11/16 photos (clear 8/8)
+  OT1-lower  ABB Relion 615, compact HMI (F1-F4)    found in  8/15 photos (clear 5/6)
+  OT1-upper  ABB Relion 615, wide HMI (F1-F16)      found in  9/14 photos (clear 6/6)
+  relays found at least once: 7/7
+  false alarms: 4 in 4 photos
+    sweep16_face2.jpg box [3027, 3484, 3207, 3793] conf 0.92
+    sweep11_face4.jpg box [3145, 2115, 3318, 2201] conf 0.83
+    sweep06_face0.jpg box [582, 2032, 899, 2318] conf 0.83
+    sweep05_face1.jpg box [790, 3011, 917, 3100] conf 0.81

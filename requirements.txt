@@ -1,0 +1,13 @@
+# Install PyTorch first, with the build that matches your GPU, for example:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+ultralytics
+pye57
+pyquaternion
+opencv-python
+numpy
+albumentations
+easyocr
+fastapi
+uvicorn[standard]
+python-multipart
+requests

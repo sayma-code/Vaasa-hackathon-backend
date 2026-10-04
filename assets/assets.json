@@ -1,0 +1,1096 @@
+{
+ "settings": {
+  "conf": 0.5,
+  "min_sweeps": 5,
+  "radius": 0.15
+ },
+ "source": "eval\\detections.json",
+ "assets": [
+  {
+   "id": "asset-01",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -5.708,
+    -5.856,
+    1.846
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.0,
+    0.008
+   ],
+   "sightings": 9,
+   "sweeps": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "mean_confidence": 0.889,
+   "max_confidence": 0.938,
+   "spread_m": 0.081,
+   "best_photo": "sweep10_face1.jpg",
+   "best_box": [
+    681,
+    509,
+    1525,
+    1066
+   ],
+   "crop": "crops/asset-01.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep10_face1.jpg",
+     "box": [
+      681,
+      509,
+      1525,
+      1066
+     ],
+     "conf": 0.938
+    },
+    {
+     "photo": "sweep07_face3.jpg",
+     "box": [
+      1919,
+      1660,
+      2145,
+      1814
+     ],
+     "conf": 0.934
+    },
+    {
+     "photo": "sweep06_face3.jpg",
+     "box": [
+      1331,
+      1658,
+      1547,
+      1807
+     ],
+     "conf": 0.931
+    },
+    {
+     "photo": "sweep08_face3.jpg",
+     "box": [
+      2916,
+      1660,
+      3163,
+      1819
+     ],
+     "conf": 0.928
+    },
+    {
+     "photo": "sweep05_face3.jpg",
+     "box": [
+      352,
+      1618,
+      591,
+      1775
+     ],
+     "conf": 0.922
+    },
+    {
+     "photo": "sweep04_face4.jpg",
+     "box": [
+      2774,
+      1732,
+      2883,
+      1851
+     ],
+     "conf": 0.918
+    },
+    {
+     "photo": "sweep09_face1.jpg",
+     "box": [
+      3699,
+      572,
+      4096,
+      1091
+     ],
+     "conf": 0.918
+    },
+    {
+     "photo": "sweep09_face2.jpg",
+     "box": [
+      0,
+      618,
+      295,
+      1210
+     ],
+     "conf": 0.856
+    },
+    {
+     "photo": "sweep03_face4.jpg",
+     "box": [
+      2841,
+      1783,
+      2910,
+      1874
+     ],
+     "conf": 0.652
+    }
+   ]
+  },
+  {
+   "id": "asset-02",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -5.715,
+    -4.787,
+    1.844
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.012,
+    0.008
+   ],
+   "sightings": 13,
+   "sweeps": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "mean_confidence": 0.857,
+   "max_confidence": 0.938,
+   "spread_m": 0.116,
+   "best_photo": "sweep11_face1.jpg",
+   "best_box": [
+    608,
+    547,
+    1446,
+    1090
+   ],
+   "crop": "crops/asset-02.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep05_face3.jpg",
+     "box": [
+      1306,
+      1648,
+      1541,
+      1801
+     ],
+     "conf": 0.938
+    },
+    {
+     "photo": "sweep06_face3.jpg",
+     "box": [
+      2232,
+      1670,
+      2454,
+      1819
+     ],
+     "conf": 0.934
+    },
+    {
+     "photo": "sweep11_face1.jpg",
+     "box": [
+      608,
+      547,
+      1446,
+      1090
+     ],
+     "conf": 0.932
+    },
+    {
+     "photo": "sweep07_face3.jpg",
+     "box": [
+      2830,
+      1687,
+      3054,
+      1839
+     ],
+     "conf": 0.928
+    },
+    {
+     "photo": "sweep04_face4.jpg",
+     "box": [
+      3359,
+      1610,
+      3584,
+      1789
+     ],
+     "conf": 0.922
+    },
+    {
+     "photo": "sweep03_face4.jpg",
+     "box": [
+      3172,
+      1707,
+      3313,
+      1834
+     ],
+     "conf": 0.918
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      0,
+      1650,
+      140,
+      1840
+     ],
+     "conf": 0.915
+    },
+    {
+     "photo": "sweep09_face2.jpg",
+     "box": [
+      1081,
+      1406,
+      1213,
+      1673
+     ],
+     "conf": 0.862
+    },
+    {
+     "photo": "sweep10_face2.jpg",
+     "box": [
+      0,
+      468,
+      545,
+      1280
+     ],
+     "conf": 0.858
+    },
+    {
+     "photo": "sweep01_face4.jpg",
+     "box": [
+      2959,
+      1827,
+      3026,
+      1900
+     ],
+     "conf": 0.834
+    },
+    {
+     "photo": "sweep08_face3.jpg",
+     "box": [
+      3969,
+      1662,
+      4096,
+      1829
+     ],
+     "conf": 0.787
+    },
+    {
+     "photo": "sweep10_face1.jpg",
+     "box": [
+      3883,
+      477,
+      4096,
+      994
+     ],
+     "conf": 0.751
+    },
+    {
+     "photo": "sweep12_face4.jpg",
+     "box": [
+      2837,
+      1248,
+      3151,
+      1643
+     ],
+     "conf": 0.556
+    }
+   ]
+  },
+  {
+   "id": "asset-03",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -5.715,
+    -3.785,
+    1.838
+   ],
+   "normal_xyz": [
+    1.0,
+    -0.013,
+    0.004
+   ],
+   "sightings": 14,
+   "sweeps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "mean_confidence": 0.88,
+   "max_confidence": 0.939,
+   "spread_m": 0.106,
+   "best_photo": "sweep12_face1.jpg",
+   "best_box": [
+    556,
+    511,
+    1401,
+    1073
+   ],
+   "crop": "crops/asset-03.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep07_face3.jpg",
+     "box": [
+      3678,
+      1712,
+      3897,
+      1864
+     ],
+     "conf": 0.939
+    },
+    {
+     "photo": "sweep12_face1.jpg",
+     "box": [
+      556,
+      511,
+      1401,
+      1073
+     ],
+     "conf": 0.937
+    },
+    {
+     "photo": "sweep05_face3.jpg",
+     "box": [
+      2167,
+      1673,
+      2391,
+      1825
+     ],
+     "conf": 0.936
+    },
+    {
+     "photo": "sweep06_face3.jpg",
+     "box": [
+      3098,
+      1679,
+      3340,
+      1836
+     ],
+     "conf": 0.935
+    },
+    {
+     "photo": "sweep03_face4.jpg",
+     "box": [
+      3735,
+      1575,
+      4006,
+      1767
+     ],
+     "conf": 0.934
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      665,
+      1791,
+      796,
+      1919
+     ],
+     "conf": 0.934
+    },
+    {
+     "photo": "sweep11_face1.jpg",
+     "box": [
+      3587,
+      585,
+      4096,
+      1093
+     ],
+     "conf": 0.931
+    },
+    {
+     "photo": "sweep04_face1.jpg",
+     "box": [
+      375,
+      1556,
+      699,
+      1756
+     ],
+     "conf": 0.93
+    },
+    {
+     "photo": "sweep01_face4.jpg",
+     "box": [
+      3252,
+      1778,
+      3376,
+      1876
+     ],
+     "conf": 0.914
+    },
+    {
+     "photo": "sweep13_face4.jpg",
+     "box": [
+      3035,
+      1221,
+      3298,
+      1616
+     ],
+     "conf": 0.868
+    },
+    {
+     "photo": "sweep02_face4.jpg",
+     "box": [
+      2364,
+      1780,
+      2435,
+      1870
+     ],
+     "conf": 0.849
+    },
+    {
+     "photo": "sweep11_face2.jpg",
+     "box": [
+      0,
+      772,
+      200,
+      1198
+     ],
+     "conf": 0.785
+    },
+    {
+     "photo": "sweep10_face2.jpg",
+     "box": [
+      1196,
+      1400,
+      1311,
+      1658
+     ],
+     "conf": 0.768
+    },
+    {
+     "photo": "sweep09_face2.jpg",
+     "box": [
+      1404,
+      1638,
+      1461,
+      1794
+     ],
+     "conf": 0.662
+    }
+   ]
+  },
+  {
+   "id": "asset-04",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -5.716,
+    -2.794,
+    1.84
+   ],
+   "normal_xyz": [
+    1.0,
+    0.014,
+    0.002
+   ],
+   "sightings": 13,
+   "sweeps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    13
+   ],
+   "mean_confidence": 0.907,
+   "max_confidence": 0.945,
+   "spread_m": 0.112,
+   "best_photo": "sweep13_face1.jpg",
+   "best_box": [
+    768,
+    557,
+    1555,
+    1111
+   ],
+   "crop": "crops/asset-04.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep13_face1.jpg",
+     "box": [
+      768,
+      557,
+      1555,
+      1111
+     ],
+     "conf": 0.945
+    },
+    {
+     "photo": "sweep04_face1.jpg",
+     "box": [
+      1457,
+      1650,
+      1689,
+      1813
+     ],
+     "conf": 0.937
+    },
+    {
+     "photo": "sweep03_face1.jpg",
+     "box": [
+      653,
+      1590,
+      918,
+      1759
+     ],
+     "conf": 0.933
+    },
+    {
+     "photo": "sweep07_face4.jpg",
+     "box": [
+      340,
+      1790,
+      483,
+      1922
+     ],
+     "conf": 0.933
+    },
+    {
+     "photo": "sweep05_face3.jpg",
+     "box": [
+      3004,
+      1699,
+      3216,
+      1847
+     ],
+     "conf": 0.929
+    },
+    {
+     "photo": "sweep12_face1.jpg",
+     "box": [
+      3590,
+      558,
+      4096,
+      1076
+     ],
+     "conf": 0.921
+    },
+    {
+     "photo": "sweep06_face4.jpg",
+     "box": [
+      0,
+      1686,
+      141,
+      1861
+     ],
+     "conf": 0.916
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      1071,
+      1867,
+      1150,
+      1961
+     ],
+     "conf": 0.914
+    },
+    {
+     "photo": "sweep01_face4.jpg",
+     "box": [
+      3718,
+      1707,
+      3890,
+      1837
+     ],
+     "conf": 0.912
+    },
+    {
+     "photo": "sweep02_face4.jpg",
+     "box": [
+      2672,
+      1717,
+      2783,
+      1838
+     ],
+     "conf": 0.906
+    },
+    {
+     "photo": "sweep06_face3.jpg",
+     "box": [
+      4012,
+      1688,
+      4096,
+      1848
+     ],
+     "conf": 0.877
+    },
+    {
+     "photo": "sweep11_face2.jpg",
+     "box": [
+      1025,
+      1346,
+      1172,
+      1640
+     ],
+     "conf": 0.859
+    },
+    {
+     "photo": "sweep12_face2.jpg",
+     "box": [
+      0,
+      513,
+      245,
+      1158
+     ],
+     "conf": 0.815
+    }
+   ]
+  },
+  {
+   "id": "asset-05",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -5.721,
+    -1.804,
+    1.837
+   ],
+   "normal_xyz": [
+    1.0,
+    0.007,
+    0.016
+   ],
+   "sightings": 11,
+   "sweeps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    12,
+    13,
+    14
+   ],
+   "mean_confidence": 0.92,
+   "max_confidence": 0.939,
+   "spread_m": 0.07,
+   "best_photo": "sweep14_face1.jpg",
+   "best_box": [
+    865,
+    673,
+    1594,
+    1175
+   ],
+   "crop": "crops/asset-05.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep04_face1.jpg",
+     "box": [
+      2260,
+      1716,
+      2441,
+      1858
+     ],
+     "conf": 0.939
+    },
+    {
+     "photo": "sweep14_face1.jpg",
+     "box": [
+      865,
+      673,
+      1594,
+      1175
+     ],
+     "conf": 0.937
+    },
+    {
+     "photo": "sweep01_face1.jpg",
+     "box": [
+      396,
+      1702,
+      602,
+      1831
+     ],
+     "conf": 0.936
+    },
+    {
+     "photo": "sweep03_face1.jpg",
+     "box": [
+      1621,
+      1635,
+      1859,
+      1793
+     ],
+     "conf": 0.934
+    },
+    {
+     "photo": "sweep06_face4.jpg",
+     "box": [
+      605,
+      1808,
+      728,
+      1929
+     ],
+     "conf": 0.933
+    },
+    {
+     "photo": "sweep02_face4.jpg",
+     "box": [
+      3214,
+      1606,
+      3423,
+      1783
+     ],
+     "conf": 0.931
+    },
+    {
+     "photo": "sweep05_face3.jpg",
+     "box": [
+      3813,
+      1721,
+      4022,
+      1869
+     ],
+     "conf": 0.929
+    },
+    {
+     "photo": "sweep07_face4.jpg",
+     "box": [
+      765,
+      1868,
+      849,
+      1964
+     ],
+     "conf": 0.921
+    },
+    {
+     "photo": "sweep12_face2.jpg",
+     "box": [
+      1035,
+      1334,
+      1180,
+      1630
+     ],
+     "conf": 0.895
+    },
+    {
+     "photo": "sweep13_face1.jpg",
+     "box": [
+      3843,
+      443,
+      4096,
+      1013
+     ],
+     "conf": 0.892
+    },
+    {
+     "photo": "sweep13_face2.jpg",
+     "box": [
+      0,
+      410,
+      510,
+      1214
+     ],
+     "conf": 0.874
+    }
+   ]
+  },
+  {
+   "id": "asset-06",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -2.76,
+    -5.909,
+    1.424
+   ],
+   "normal_xyz": [
+    -0.998,
+    0.001,
+    0.06
+   ],
+   "sightings": 9,
+   "sweeps": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "mean_confidence": 0.833,
+   "max_confidence": 0.918,
+   "spread_m": 0.094,
+   "best_photo": "sweep07_face1.jpg",
+   "best_box": [
+    1976,
+    1754,
+    2633,
+    2411
+   ],
+   "crop": "crops/asset-06.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep10_face3.jpg",
+     "box": [
+      2265,
+      2029,
+      2441,
+      2189
+     ],
+     "conf": 0.918
+    },
+    {
+     "photo": "sweep07_face1.jpg",
+     "box": [
+      1976,
+      1754,
+      2633,
+      2411
+     ],
+     "conf": 0.917
+    },
+    {
+     "photo": "sweep09_face3.jpg",
+     "box": [
+      1245,
+      2011,
+      1418,
+      2174
+     ],
+     "conf": 0.895
+    },
+    {
+     "photo": "sweep11_face3.jpg",
+     "box": [
+      3111,
+      2048,
+      3295,
+      2201
+     ],
+     "conf": 0.883
+    },
+    {
+     "photo": "sweep08_face1.jpg",
+     "box": [
+      0,
+      1829,
+      310,
+      2430
+     ],
+     "conf": 0.863
+    },
+    {
+     "photo": "sweep13_face4.jpg",
+     "box": [
+      739,
+      2070,
+      839,
+      2176
+     ],
+     "conf": 0.861
+    },
+    {
+     "photo": "sweep12_face3.jpg",
+     "box": [
+      3937,
+      2078,
+      4096,
+      2228
+     ],
+     "conf": 0.822
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      3808,
+      1729,
+      4096,
+      2469
+     ],
+     "conf": 0.814
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      3430,
+      1796,
+      4096,
+      2465
+     ],
+     "conf": 0.527
+    }
+   ]
+  },
+  {
+   "id": "asset-07",
+   "product": "ABB Relion 615 protection relay",
+   "class_id": 0,
+   "position_xyz": [
+    -2.763,
+    -5.919,
+    1.724
+   ],
+   "normal_xyz": [
+    -0.998,
+    -0.002,
+    0.064
+   ],
+   "sightings": 11,
+   "sweeps": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "mean_confidence": 0.846,
+   "max_confidence": 0.938,
+   "spread_m": 0.117,
+   "best_photo": "sweep07_face1.jpg",
+   "best_box": [
+    1805,
+    614,
+    2772,
+    1281
+   ],
+   "crop": "crops/asset-07.jpg",
+   "seen_in": [
+    {
+     "photo": "sweep09_face3.jpg",
+     "box": [
+      1206,
+      1735,
+      1461,
+      1900
+     ],
+     "conf": 0.938
+    },
+    {
+     "photo": "sweep10_face3.jpg",
+     "box": [
+      2250,
+      1760,
+      2484,
+      1920
+     ],
+     "conf": 0.933
+    },
+    {
+     "photo": "sweep07_face1.jpg",
+     "box": [
+      1805,
+      614,
+      2772,
+      1281
+     ],
+     "conf": 0.932
+    },
+    {
+     "photo": "sweep11_face3.jpg",
+     "box": [
+      3117,
+      1783,
+      3338,
+      1940
+     ],
+     "conf": 0.925
+    },
+    {
+     "photo": "sweep06_face2.jpg",
+     "box": [
+      891,
+      1105,
+      1189,
+      1624
+     ],
+     "conf": 0.906
+    },
+    {
+     "photo": "sweep13_face4.jpg",
+     "box": [
+      757,
+      1892,
+      852,
+      2000
+     ],
+     "conf": 0.891
+    },
+    {
+     "photo": "sweep08_face4.jpg",
+     "box": [
+      3678,
+      766,
+      4096,
+      1568
+     ],
+     "conf": 0.855
+    },
+    {
+     "photo": "sweep14_face4.jpg",
+     "box": [
+      1035,
+      1936,
+      1127,
+      2020
+     ],
+     "conf": 0.826
+    },
+    {
+     "photo": "sweep08_face1.jpg",
+     "box": [
+      0,
+      798,
+      414,
+      1446
+     ],
+     "conf": 0.802
+    },
+    {
+     "photo": "sweep12_face4.jpg",
+     "box": [
+      0,
+      1813,
+      59,
+      1973
+     ],
+     "conf": 0.799
+    },
+    {
+     "photo": "sweep12_face3.jpg",
+     "box": [
+      3956,
+      1818,
+      4096,
+      1967
+     ],
+     "conf": 0.501
+    }
+   ]
+  }
+ ]
+}

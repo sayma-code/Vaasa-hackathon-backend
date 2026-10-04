@@ -1,0 +1,8 @@
+tag_name,panel,panel_function,cabinet,x,y,z,last_inspection,next_inspection,maintenance_note
+H01 protection relay,H01,PT1,ABB medium-voltage switchgear,-5.71,-5.85,1.85,2026-05-12,2027-05-12,DEMO DATA: secondary injection test passed; settings file archived.
+H02 protection relay,H02,Station transformer,ABB medium-voltage switchgear,-5.71,-4.77,1.84,2026-05-12,2027-05-12,DEMO DATA: firmware update pending; check binary input wiring at next outage.
+H03 protection relay,H03,Metering,ABB medium-voltage switchgear,-5.71,-3.77,1.84,2026-05-13,2027-05-13,DEMO DATA: no findings; measurement accuracy verified.
+H04 protection relay,H04,Solar 1,ABB medium-voltage switchgear,-5.72,-2.78,1.84,2026-05-13,2027-05-13,DEMO DATA: trip circuit supervision alarm cleared; monitor.
+H05 protection relay,H05,Solar 2,ABB medium-voltage switchgear,-5.71,-1.77,1.84,2026-05-13,2027-05-13,DEMO DATA: no findings.
+OT1 relay (upper),OT1,Not labelled on site,VEO control cabinet,-2.75,-5.93,1.74,2026-05-14,2027-05-14,DEMO DATA: commissioning test scheduled.
+OT1 relay (lower),OT1,Not labelled on site,VEO control cabinet,-2.75,-5.92,1.43,2026-05-14,2027-05-14,DEMO DATA: compact front panel variant; commissioning test scheduled.
