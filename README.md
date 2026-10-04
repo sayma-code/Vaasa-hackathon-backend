@@ -1,47 +1,77 @@
 # Automatic product tagging in a digital twin: algorithm
 
 Hackathon solution for "Product tagging in VEO360 digital twin using object recognition".
-From one set of product reference images, it finds every matching device in a Matterport scan,
-places a tag on it in 3D, and links the tag to the product's documentation, with no manual tagging.
+It finds every ABB Relion 615 relay in a Matterport scan, places a tag on it in 3D, and links the
+tag to the product's documentation, with no manual tagging in the twin.
 
-**Live demo:** https://YOUR-USERNAME.github.io/YOUR-FRONTEND-REPO/
+**Live demo:** https://sayma-code.github.io/Vaasa-hackathon-frontend/
 
-This repository holds the algorithm. The website is in a separate repository: YOUR-FRONTEND-REPO-ADDRESS
+This repository holds the algorithm. The website is in a separate repository: https://github.com/sayma-code/Vaasa-hackathon-frontend
 
-## Results on the provided scan
+## How it works
+
+### Teaching the detector
+
+1. **Photos** (`test_photos/`, not in this repository): photos of the relay, both scan photos of the
+   site and photos from the web.
+2. **Labels**: each relay's front plate is marked with a box. Scan photos take their boxes from
+   `ground_truth/relays.json`; the other photos from `photo_labels.json`.
+3. **Dataset** (`make_photo_dataset.py`): 85% of the photos are used for training and 15% are held out
+   for validation. For every photo, two synthetic variations are made from the training photos: a
+   zoomed crop around a relay with a slight change of viewpoint and random lighting, colour, blur and noise.
+4. **Training** (`train.py`): a YOLO11s detector is fine-tuned on that dataset.
+
+### From the detector to tags in the twin
+
+5. **Scan photos** (`extract_e57.py`): the 108 photos and their camera positions are unpacked from the scan file.
+6. **Detection** (`detector.py`, `evaluate_scan.py`): each 4096 px scan photo is searched in overlapping
+   1024 px tiles at three zoom levels, and the result is scored against the ground truth.
+7. **2D to 3D** (`locate_assets.py`): each detection is lifted to a 3D point with the point cloud, sightings
+   within 15 cm are merged into one asset, and assets seen from fewer than 5 scan positions are dropped.
+8. **Linking** (`link_assets.py`): each asset gets its product documents and its asset-register entry.
+9. **Website data** (`build_viewer_data.py`): the tags and the scan are written into the frontend's `data` folder.
+
+`server.py` runs the local demo: it serves the website, detects the product in submitted photos, reads
+the text on each detection ("615", "ABB") as a second check, and serves the product documents.
+
+## Results
+
+Two detectors have been trained.
+
+**First detector: synthetic images only.** Trained on 4,000 images generated from the organisers'
+reference renders, pasted onto outside backgrounds; it never saw the site. The tags currently shown in
+the twin come from this detector.
 
 | | |
 |---|---|
-| Labelled site photos used for training | 0 |
 | Relays in the room | 7 |
 | Relays found and tagged | 7 |
 | Wrong tags | 0 |
 | Tag position error | 0.3 to 3.2 cm |
 | Clear views detected (confidence 0.8) | 50 of 55 |
 
-The scan photos were used only for testing. One setting (a tag must be seen from at least
-5 scan positions) was chosen after looking at this scan.
+It recognised only the front panel shown in the reference renders; a photo of the older blue-key
+front of the same relay family scored 12%. The rule that a tag must be seen from at least 5 scan
+positions was chosen after looking at this scan.
 
-## How it works
+**Current detector: real photos plus variations.** Trained on 54 photos (33 scan photos of the site,
+21 from the web) and 126 synthetic variations of them. `runs/detector/weights/best.pt` is this detector.
 
-The website the last step feeds is in the separate frontend repository.
+| | |
+|---|---|
+| Held-out validation photos | 9, showing 14 relays |
+| Relays found on them | 85% |
+| Correct among its detections | 100% |
+| Held-out web photos of the blue-key front | 4 of 4 found, at 57% to 78% confidence |
 
-1. **Synthetic data** (`make_synthetic.py`): the product is cut out of its reference images and pasted onto
-   4,000 backgrounds with random viewpoint, lighting, blur, noise, occlusion, label wear and screen state.
-   Backgrounds are computer-drawn or freely licensed photos; none come from the scanned site.
-2. **Training** (`train.py`): a YOLO11s detector is trained on the synthetic images only.
-3. **Detection on the scan** (`evaluate_scan.py`, `detector.py`): each 4096 px scan photo is searched in
-   overlapping tiles at three zoom levels.
-4. **2D to 3D** (`locate_assets.py`): each detection is lifted to a 3D point with the point cloud, sightings
-   of the same spot are merged, and spots seen from too few scan positions are dropped.
-5. **Linking** (`link_assets.py`): each asset gets its product documents and its asset-register entry.
-6. **Digital twin** (frontend repository): a 3D overview and a walk-inside view with clickable tags that open the
-   asset details and documentation.
+Steps 6 to 9 have not been re-run with the current detector. Its score on the scan would also not be
+an independent test, because most of the scan photos that show relays are in its training set.
 
 ## Adding another product
 
-Create `products/<name>/` with a `product.json` and a `references/` folder of images on a white
-background, then rerun steps 1 to 6. No code changes are needed.
+Add a `products/<name>/product.json` with the product's name, the text printed on it and its documents,
+put photos of it in `test_photos/`, mark them in `photo_labels.json`, and rerun the steps. The dataset
+script currently writes one product class.
 
 ## Running it
 
@@ -51,7 +81,7 @@ python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 ```
 
-The demo server and the viewer data step use the website, so place the two repositories side by side:
+The demo server and the website data step use the website, so place the two repositories side by side:
 
 ```
 project/
@@ -59,12 +89,11 @@ project/
   backend/         this repository
 ```
 
-To rebuild everything from the scan, put `cloud_0.e57` in this folder (it is not in the repository):
+To rebuild from the scan, put `cloud_0.e57` and a `test_photos` folder here (neither is in the repository):
 
 ```
 python extract_e57.py            # photos and camera poses from cloud_0.e57
-python download_backgrounds.py   # outside background photos
-python make_synthetic.py         # synthetic training set
+python make_photo_dataset.py     # training set from test_photos
 python train.py                  # train the detector
 python evaluate_scan.py          # detect in the scan photos and score
 python locate_assets.py          # 3D assets
@@ -81,24 +110,27 @@ as it appears online.
 | Path | Content |
 |---|---|
 | `*.py` | The pipeline scripts and the demo server |
-| `products/abb_615/` | Reference images, expected text and documents of the product |
-| `runs/detector/weights/best.pt` | The trained detector |
+| `photo_labels.json` | Hand-marked relay boxes for the web photos |
+| `products/abb_615/product.json` | The product's name, expected text and documents |
+| `runs/detector/weights/best.pt` | The current detector |
 | `assets/` | The 7 located assets, their tags and close-ups |
-| `eval/` | Detections on the scan and the score report |
-| `ground_truth/` | Hand-checked relay positions used for scoring |
+| `eval/` | Detections on the scan and the score report, from the first detector |
+| `ground_truth/` | Hand-checked relay positions in the scan |
 | `asset_register.csv` | Panel names (read from the door plates) and demo maintenance entries |
 
 ## Known limits
 
-- The detector knows the front panel shown in the reference images. Other front panels of the same
-  product family score low until their reference images are added.
+- The current detector is trained on few photos and is less confident than the first one.
+- It was trained on real photos, including the site's own scan photos. The challenge brief asks for
+  training on synthetic data generated from the organisers' reference image, which is what the first
+  detector did.
 - The maintenance entries are demo data.
-- Asset-register entries are matched to assets by position.
+- Asset-register entries are matched to assets by position, and those positions come from the ground truth.
 
 ## Sources
 
 - Scan and reference images: provided by the hackathon organisers.
-- Background photos: Wikimedia Commons, see `backgrounds/sources.csv` for authors and licences.
+- Web photos: collected from an image search for local training and testing; they belong to their
+  publishers and are not in this repository.
 - Documentation: public ABB 615 series documents, shown from ABB's library.
-- Libraries: Ultralytics YOLO, PyTorch, three.js, EasyOCR, pye57, FastAPI.
-"# Vaasa-hackathon-backend" 
+- Libraries: Ultralytics YOLO, PyTorch, EasyOCR, pye57, FastAPI.

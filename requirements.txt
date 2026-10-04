@@ -5,7 +5,6 @@ pye57
 pyquaternion
 opencv-python
 numpy
-albumentations
 easyocr
 fastapi
 uvicorn[standard]

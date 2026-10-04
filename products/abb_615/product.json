@@ -3,18 +3,7 @@
   "manufacturer": "ABB",
   "series": "Relion 615",
   "description": "Protection and control relay for medium-voltage switchgear. The exact type (feeder, transformer, motor or voltage protection) is not printed on the front panel.",
-  "ocr_keywords": [
-    "615",
-    "ABB"
-  ],
-  "screen_hsv": {
-    "h": [
-      100,
-      125
-    ],
-    "s_min": 40,
-    "v_min": 150
-  },
+  "ocr_keywords": ["615", "ABB"],
   "documents": [
     {
       "title": "615 series Operation Manual",

@@ -12,10 +12,6 @@ organiser_material/
 scan_images/
 # scan3d.py (created on demand)
 scan_points/
-# make_synthetic.py
-dataset/
-# download_backgrounds.py (sources.csv is kept)
-backgrounds/*.jpg
 # build_ground_truth.py
 ground_truth/preview/
 # evaluate_scan.py
@@ -36,5 +32,5 @@ runs/detector/weights/*
 
 # Photos from the web, for local testing only: not ours to publish
 test_photos/
-# make_photo_dataset.py (contains the web photos)
+# make_photo_dataset.py (rebuilt from test_photos; contains the web photos)
 dataset_photos/
