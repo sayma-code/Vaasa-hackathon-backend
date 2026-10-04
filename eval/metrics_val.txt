@@ -1,0 +1,33 @@
+Detector: runs/detector/weights/best.pt
+Photos: 9 photos held out from training (fair test), showing 14 relays
+A box counts at confidence >= 0.5 and is correct at overlap (IoU) >= 0.5
+
+Correct detections   12
+False alarms         0
+Missed relays        2
+
+Accuracy             85.7%
+Precision            100.0%
+Recall               85.7%
+F1-score             92.3%
+ROC-AUC              0.949  (over 22 proposed boxes: 13 correct, 9 false)
+
+At other confidence levels:
+  conf   accuracy  precision  recall   F1     correct  false  missed
+  0.25     75.0%     85.7%   85.7%   85.7%      12      2       2
+  0.40     80.0%     92.3%   85.7%   88.9%      12      1       2
+  0.50     85.7%    100.0%   85.7%   92.3%      12      0       2
+  0.60     71.4%    100.0%   71.4%   83.3%      10      0       4
+  0.70     64.3%    100.0%   64.3%   78.3%       9      0       5
+  0.80     28.6%    100.0%   28.6%   44.4%       4      0      10
+
+Per photo (relays marked / found / false alarms):
+  real_photo_002.jpg                            1 / 1 / 0
+  real_photo_009.jpg                            1 / 1 / 0
+  real_photo_021.jpg                            1 / 1 / 0
+  real_photo_026.jpg                            1 / 1 / 0
+  real_sweep03_face4.jpg                        5 / 3 / 0
+  real_sweep09_face1.jpg                        1 / 1 / 0
+  real_sweep11_face4.jpg                        1 / 1 / 0
+  real_sweep12_face1.jpg                        2 / 2 / 0
+  real_sweep14_face1.jpg                        1 / 1 / 0
